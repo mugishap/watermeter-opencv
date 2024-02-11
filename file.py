@@ -3,7 +3,7 @@ import pytesseract
 import numpy as np
 
 pytesseract.pytesseract.tesseract_cmd = r'/usr/local/bin/tesseract' 
-img = cv2.imread('img.png') 
+img = cv2.imread('meter.jpg') 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 blur = cv2.GaussianBlur(gray, (5,5), 0) 
